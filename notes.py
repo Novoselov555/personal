@@ -3,7 +3,7 @@ from pprint import pprint
 import json
 import csv
 
-class Note:
+class Notes:
     def __init__(self):
         self.id = None
         self.title = None

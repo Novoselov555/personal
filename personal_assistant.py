@@ -1,4 +1,4 @@
-from notes import Note
+from notes import Notes
 from tasks import Tasks
 
 class GreetPage:
@@ -16,7 +16,7 @@ class GreetPage:
             choice = input('Выберите действие: ')
 
             if choice == "1":
-                Note().managing_notes()
+                Notes().managing_notes()
             elif choice == "2":
                 Tasks().managing_tasks()
             elif choice == "3":

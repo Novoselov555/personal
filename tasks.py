@@ -173,7 +173,7 @@ class Tasks:
         except Exception as e:
             print(f"Произошла ошибка: {e}")
 
-    # Отдельная функция чтения заметок
+    # Отдельная функция чтения задач
     def read_tasks(self):
         try:
             with open('tasks.json', 'r', encoding='utf-8') as file:
@@ -182,7 +182,7 @@ class Tasks:
             data = []
         return data
 
-    # Отдельная функция загрузки заметок в файл notes.json
+    # Отдельная функция загрузки задач в файл tasks.json
     def upload_tasks(self, data):
-        with open('tasks_export.json', 'w', encoding='utf-8') as file:
+        with open('tasks.json', 'w', encoding='utf-8') as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
