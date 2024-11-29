@@ -1,5 +1,8 @@
 from notes import Notes
 from tasks import Tasks
+from contacts import Contacts
+from calculator import Calculator
+from finance_manager import FinanceRecord
 
 class GreetPage:
     def tool_bars(self):
@@ -20,11 +23,11 @@ class GreetPage:
             elif choice == "2":
                 Tasks().managing_tasks()
             elif choice == "3":
-                pass
+                Contacts().managing_contacts()
             elif choice == "4":
-                pass
+                FinanceRecord().manage_records()
             elif choice == "5":
-                pass
+                Calculator().calc()
             elif choice == "6":
                 print("Выход из приложения. До свидания!")
                 break
