@@ -1,4 +1,5 @@
 from notes import Note
+from tasks import Tasks
 
 class GreetPage:
     def tool_bars(self):
@@ -17,7 +18,7 @@ class GreetPage:
             if choice == "1":
                 Note().managing_notes()
             elif choice == "2":
-                pass
+                Tasks().managing_tasks()
             elif choice == "3":
                 pass
             elif choice == "4":
